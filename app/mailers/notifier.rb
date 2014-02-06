@@ -1,5 +1,5 @@
 class Notifier < ActionMailer::Base
-  default from: "choralchoeurdejoie@example.com"
+  default from: "choralchoeurdejoie@choralchoeurdejoie.com"
  
  def send_signup_email(user)
     @user = user
