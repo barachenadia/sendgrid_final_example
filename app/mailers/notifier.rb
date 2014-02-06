@@ -1,9 +1,9 @@
 class Notifier < ActionMailer::Base
-  default from: "choralchoeurdejoie@gmail.com"
+  default from: "@user.email"
  
  def send_signup_email(user)
     @user = user
-    mail( :to => @user.email,
+    mail( :to => 'choralchoeurdejoie@gmail.com',
     :subject => 'Thanks for signing up for our amazing app' )
   end
 
